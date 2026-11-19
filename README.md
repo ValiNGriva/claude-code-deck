@@ -13,7 +13,11 @@ from that — the four-line brief, the permission dial, and the checking you owe
 https://valingriva.github.io/claude-code-deck/
 ```
 
-For a specific slide, add the number: `…/claude-code-deck/#12`
+For a specific slide, add the number to the **direct file** link:
+
+```
+https://valingriva.github.io/claude-code-deck/claude-code.html#12
+```
 
 > **On github.com you will see source code, not slides.**
 > Clicking `index.html` in this repo shows the raw HTML markup, which is expected — GitHub is
@@ -24,9 +28,14 @@ For a specific slide, add the number: `…/claude-code-deck/#12`
 | Way | What you get |
 |---|---|
 | **`valingriva.github.io/claude-code-deck/`** | ✅ the deck, rendered — use this |
-| `#12` on the end of that URL | ✅ jumps to slide 12 |
+| `…/claude-code.html#12` | ✅ jumps straight to slide 12 |
+| `…/claude-code-deck/#12` | ❌ falls back to slide 1 — the redirect drops the `#` |
 | Download the file, open in Chrome | ✅ works offline, no server needed |
-| `github.com/…/blob/main/index.html` | ❌ raw HTML source |
+| `github.com/…/blob/main/claude-code.html` | ❌ raw HTML source |
+
+> `index.html` is only a redirect to `claude-code.html`. Browsers discard the URL fragment
+> (`#12`) when following it, so **deep links must use the `claude-code.html` address**, not
+> the bare folder.
 
 The file is self-contained: fonts are embedded, nothing is fetched at runtime, so a
 downloaded copy renders identically with no network.
