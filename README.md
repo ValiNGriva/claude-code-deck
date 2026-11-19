@@ -62,8 +62,10 @@ Runs about 40 minutes with the three activities (slides 12, 17, 24) at 4–5 min
 
 | File | |
 |---|---|
-| `index.html` | same deck, served by GitHub Pages at the bare URL |
-| `claude-code.html` | the deck, for a direct link or download |
+| `claude-code.html` | **the deck** — the only copy of the content |
+| `index.html` | 1 KB redirect so the bare folder URL lands on the deck |
+
+Edit `claude-code.html` only. There is no second copy to keep in sync.
 
 ## A note on what this deck does and doesn't claim
 
