@@ -5,30 +5,69 @@ A 30-slide teaching deck for SCTP professionals on a learning journey with Claud
 **The one idea:** a chatbot tells you what to do; an agent does it. Everything else follows
 from that — the four-line brief, the permission dial, and the checking you owe it.
 
-## View it
+## ▶ Open the deck
 
-Open `index.html` in any browser. It is a single self-contained file: fonts embedded,
-no network required, works offline.
+**Use the published link, not the GitHub file view:**
+
+```
+https://valingriva.github.io/claude-code-deck/
+```
+
+For a specific slide, add the number: `…/claude-code-deck/#12`
+
+> **On github.com you will see source code, not slides.**
+> Clicking `index.html` in this repo shows the raw HTML markup, which is expected — GitHub is
+> a code host, not a web host. Use the `.github.io` link above to see the deck itself.
+
+### Other ways to open it
+
+| Way | What you get |
+|---|---|
+| **`valingriva.github.io/claude-code-deck/`** | ✅ the deck, rendered — use this |
+| `#12` on the end of that URL | ✅ jumps to slide 12 |
+| Download the file, open in Chrome | ✅ works offline, no server needed |
+| `github.com/…/blob/main/index.html` | ❌ raw HTML source |
+
+The file is self-contained: fonts are embedded, nothing is fetched at runtime, so a
+downloaded copy renders identically with no network.
+
+## Navigation
 
 | Key | Action |
 |---|---|
 | `→` `←` `space` | next / previous slide |
 | `Home` `End` | first / last slide |
 | `F` | fullscreen |
-| `#12` | deep link to slide 12 |
-| click left/right half | advance |
+| click left/right half | advance / go back |
+| swipe | advance / go back (touch) |
 
 ## Print to PDF
 
 `File → Print → Save as PDF`, margins **None**, background graphics **on**.
-One slide per page at 1440×810.
+One slide per page at 1440×810 — 30 pages.
 
 ## Structure
 
-- **Opening** — three gut calls, then what they showed
-- **Block 1** — what an agent is
-- **Block 2** — how you hand over a task
-- **Block 3** — permissions and the trust dial
-- **Close** — three things, exit poll
+| Part | Slides | |
+|---|---|---|
+| Opening | 1–7 | three gut calls, then what they showed |
+| Block 1 | 8–13 | what an agent is |
+| Block 2 | 14–19 | how you hand over a task |
+| Block 3 | 20–26 | permissions and the trust dial |
+| Close | 27–30 | three things, exit poll |
 
-Runs about 40 minutes with the three activities at 4–5 minutes each.
+Runs about 40 minutes with the three activities (slides 12, 17, 24) at 4–5 minutes each.
+
+## Files
+
+| File | |
+|---|---|
+| `index.html` | same deck, served by GitHub Pages at the bare URL |
+| `claude-code.html` | the deck, for a direct link or download |
+
+## A note on what this deck does and doesn't claim
+
+The permission levels are described by **behaviour** ("ask every time", "plan only", "edits
+without asking", "full access"), not by product menu names, because those change between
+releases and this deck could not verify them against live documentation. Teach the behaviour,
+and check the current names before delivery.
